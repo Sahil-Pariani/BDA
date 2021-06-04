@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+     <!-- custom stylesheet -->
+     <%= stylesheet_link_tag "application.css" %>
+
+    <title>BD Academy</title>
+    <style>
+        hr {​​​
+position: relative;
+top: 5px;
+border: none;
+height: 0.5px;
+background: gray;
+margin-bottom: 5px;
+}​​​
+</style>
+  </head>
+   <body class="bg-light"> 
+ <!-- header is here-->
+
+<%= render '/home/dashboard' %>
+
+
+
+    <%= yield %>
+
+      <!-- footer is here-->
+      <hr>
+  <div class="row border-top px-2 pt-2" style="font-size:13px;">
+    <div class="col">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <%= image_tag("bd.jpg", :alt => "bd", :size =>"50x50") %>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="col">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    
+                    <a><%= link_to "Being Digital", "https://www.beingdigital.co.in/", :target => "_blank" %></a>
+                </li>
+                <li class="nav-item">
+                    
+                    <a><%= link_to "Being Ambitious", "https://www.beingambitious.co.in/", :target => "_blank" %></a>
+                </li> 
+                <li class="nav-item">
+                    <a> <%= link_to 'About Us', home_about_path %></a>
+                </li>
+            </ul>
+        </div>
+        <div class="col">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a> <%= link_to 'T & C', home_terms_path %></a>
+                </li>
+                <li class="nav-item">
+                    <a> <%= link_to 'Privacy Policy',  home_privacy_path %></a>
+                </li> 
+
+                <li class="nav-item">
+                    <a> <%= link_to 'FAQs',  home_faq_path %></a>
+                </li> 
+
+            </ul>
+        </div>
+        <div class="col">
+            <ul class="nav flex-column">
+            <li class="nav-item">
+                    <a> <%= link_to 'Sign Up', home_signup_path %></a>
+                </li>
+                <li class="nav-item">
+                    <a> <%= link_to 'Log In', home_login_path %></a>
+                </li>
+                                <li class="nav-item">
+                    <a> <%= link_to 'Contact Us', home_contact_path %></a>
+                </li>
+            </ul>
+        </div>
+        <div class="col">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    Follow Us On
+                </li>
+                <li class="nav-item">
+                   
+            <a style="padding-left: 15px"target="_blank" href="https://www.facebook.com/ba.beingambitious"><i class="fab fa-facebook"></i></a>
+            <a style="padding-left: 15px"target="_blank" href="https://www.linkedin.com/company/beingambitious/"><i class="fab fa-linkedin"></i></a>
+
+                </li>
+                <li class="nav-item">
+                        <a style="padding-left: 15px"target="_blank" href="https://twitter.com/beingambitious8"><i class="fab fa-twitter"></i></a>
+            <a style="padding-left: 15px"target="_blank" href="https://www.instagram.com/ba.beingambitious/"><i class="fab fa-instagram"></i></a>
+                </li>  
+            </ul>
+        </div>
+    </div>
+    
+    
+
+
+  </body>
+</html>

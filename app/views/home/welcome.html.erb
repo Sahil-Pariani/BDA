@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BD Academy</title>
+    <%= stylesheet_link_tag "welcome.css" %>
+</head>
+
+  <body class="bg-light">
+   
+    <div class="banner" style="height:400px; padding-top:150px; background-size: 100%>
+
+        <div class="container">
+            <div class="row align-items-end">
+                <div class="col">
+                    <div class="col-md-4 text-dark">
+                        <h1 class="display-6">Hot Sale - $9.99 courses</h1>
+                    </div>
+                    <div class="col-md-6">  
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control form-control-lg col-9 border-right-0 rounded-radius-left" type="search" placeholder="what do you want to learn!" aria-label="Search">
+                            <button class="btn btn-lg btn-danger border-left-0 rounded-radius-right col-2 my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="color-grad text-light py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+
+                        <div class="text-dark">
+                            <h4 class="mt-0"><b> Fresh Content</b></h4>
+                            <p> Dolore dolor ut id voluptate mollit cillum id nisi eu qui excepteur eiusmod nisi esse id officia.</p>
+                        </div>
+
+                </div>
+                <div class="col-md-4">
+
+                        <div class="text-dark">
+                            <h4 class="mt-0"> <b> Trusted Instructors</b></h4>
+                            <p>Lorem ipsum exercitation veniam incididunt nostrud est labore exercitation enim et commodo veniam laboris id reprehenderit id duis sint.</p>
+                        </div>
+
+                </div>
+                <div class="col-md-4">
+
+                        <div class="text-dark">
+                            <h4 class="mt-0"><b>  Learn Anything</b></h4>
+                            <p>Non pariatur elit in id dolore sunt ut cupidatat ut aliquip do dolor culpa in aute.</p>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <%= image_tag("C1.jpg", :alt => "Course Image") %>
+      
+    </div>
+    <div class="carousel-item">
+       <%= image_tag("c2.jpg", :alt => "Course Image") %>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag("c3.jpg", :alt => "Course Image") %>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+    <div class="container mt-5">
+        <h3><small class="text-muted">Top Courses for "Business"</small></h3>
+        <div class="card-deck">
+            <%= link_to home_course_path do %>
+            <div class="card mx-1">
+                <%= image_tag("sample.jpg", :alt => "Course Image") %>
+                <div class="card-body px-2">
+                    <h6 class="card-title">An Entire MBA in 1 course. Award Winning...</h6>
+                    <p class="card-text" style="font-size:11px">Chris Haroun. Complete Business...</p>
+                    <p class="card-text"><small class="text-muted">
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star-half text-warning"></i>
+                        4.5 (18,560)</small>
+                        <span class="d-block"></span>
+                        <span class="float-right">
+                            <span class="text-muted" style="text-decoration:line-through">$199.99</span>
+                            <small><strong>$9.99</strong></small>
+                        </span> 
+                    </p>
+                </div>
+                <% end %>
+            </div>
+
+            <%= link_to home_course_path do %>
+            <div class="card mx-1">
+                <%= image_tag("sample.jpg", :alt => "Course Image") %>
+                <div class="card-body px-2">
+                    <h6 class="card-title">An Entire MBA in 1 course. Award Winning...</h6>
+                    <p class="card-text" style="font-size:11px">Chris Haroun. Complete Business...</p>
+                    <p class="card-text"><small class="text-muted">
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star-half text-warning"></i>
+                        4.5 (18,560)</small>
+                        <span class="d-block"></span>
+                        <span class="float-right">
+                            <span class="text-muted" style="text-decoration:line-through">$199.99</span>
+                            <small><strong>$9.99</strong></small>
+                        </span> 
+                    </p>
+                </div>
+                <% end %>
+            </div>
+
+
+            <%= link_to home_course_path do %>
+            <div class="card mx-1">
+                <%= image_tag("sample.jpg", :alt => "Course Image") %>
+                <div class="card-body px-2">
+                    <h6 class="card-title">An Entire MBA in 1 course. Award Winning...</h6>
+                    <p class="card-text" style="font-size:11px">Chris Haroun. Complete Business...</p>
+                    <p class="card-text"><small class="text-muted">
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star-half text-warning"></i>
+                        4.5 (18,560)</small>
+                        <span class="d-block"></span>
+                        <span class="float-right">
+                            <span class="text-muted" style="text-decoration:line-through">$199.99</span>
+                            <small><strong>$9.99</strong></small>
+                        </span> 
+                    </p>
+                </div>
+                <% end %>
+            </div>
+
+            <%= link_to home_course_path do %>
+            <div class="card mx-1">
+                <%= image_tag("sample.jpg", :alt => "Course Image") %>
+                <div class="card-body px-2">
+                    <h6 class="card-title">An Entire MBA in 1 course. Award Winning...</h6>
+                    <p class="card-text" style="font-size:11px">Chris Haroun. Complete Business...</p>
+                    <p class="card-text"><small class="text-muted">
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star-half text-warning"></i>
+                        4.5 (18,560)</small>
+                        <span class="d-block"></span>
+                        <span class="float-right">
+                            <span class="text-muted" style="text-decoration:line-through">$199.99</span>
+                            <small><strong>$9.99</strong></small>
+                        </span> 
+                    </p>
+                </div>
+                <% end %>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="container mt-5">
+        <h3><small class="text-muted">Top Courses for "Business"</small></h3>
+        <div class="card-deck">
+            <%= link_to home_course_path do %>
+            <div class="card mx-1">
+                <%= image_tag("sample.jpg", :alt => "Course Image") %>
+                <div class="card-body px-2">
+                    <h6 class="card-title">An Entire MBA in 1 course. Award Winning...</h6>
+                    <p class="card-text" style="font-size:11px">Chris Haroun. Complete Business...</p>
+                    <p class="card-text"><small class="text-muted">
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star-half text-warning"></i>
+                        4.5 (18,560)</small>
+                        <span class="d-block"></span>
+                        <span class="float-right">
+                            <span class="text-muted" style="text-decoration:line-through">$199.99</span>
+                            <small><strong>$9.99</strong></small>
+                        </span> 
+                    </p>
+                </div>
+                <% end %>
+            </div>
+
+            <%= link_to home_course_path do %>
+            <div class="card mx-1">
+                <%= image_tag("sample.jpg", :alt => "Course Image") %>
+                <div class="card-body px-2">
+                    <h6 class="card-title">An Entire MBA in 1 course. Award Winning...</h6>
+                    <p class="card-text" style="font-size:11px">Chris Haroun. Complete Business...</p>
+                    <p class="card-text"><small class="text-muted">
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star-half text-warning"></i>
+                        4.5 (18,560)</small>
+                        <span class="d-block"></span>
+                        <span class="float-right">
+                            <span class="text-muted" style="text-decoration:line-through">$199.99</span>
+                            <small><strong>$9.99</strong></small>
+                        </span> 
+                    </p>
+                </div>
+                <% end %>
+            </div>
+
+
+            <%= link_to home_course_path do %>
+            <div class="card mx-1">
+                <%= image_tag("sample.jpg", :alt => "Course Image") %>
+                <div class="card-body px-2">
+                    <h6 class="card-title">An Entire MBA in 1 course. Award Winning...</h6>
+                    <p class="card-text" style="font-size:11px">Chris Haroun. Complete Business...</p>
+                    <p class="card-text"><small class="text-muted">
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star-half text-warning"></i>
+                        4.5 (18,560)</small>
+                        <span class="d-block"></span>
+                        <span class="float-right">
+                            <span class="text-muted" style="text-decoration:line-through">$199.99</span>
+                            <small><strong>$9.99</strong></small>
+                        </span> 
+                    </p>
+                </div>
+                <% end %>
+            </div>
+
+            <%= link_to home_course_path do %>
+            <div class="card mx-1">
+                <%= image_tag("sample.jpg", :alt => "Course Image") %>
+                <div class="card-body px-2">
+                    <h6 class="card-title">An Entire MBA in 1 course. Award Winning...</h6>
+                    <p class="card-text" style="font-size:11px">Chris Haroun. Complete Business...</p>
+                    <p class="card-text"><small class="text-muted">
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star-half text-warning"></i>
+                        4.5 (18,560)</small>
+                        <span class="d-block"></span>
+                        <span class="float-right">
+                            <span class="text-muted" style="text-decoration:line-through">$199.99</span>
+                            <small><strong>$9.99</strong></small>
+                        </span> 
+                    </p>
+                </div>
+                <% end %>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="container mt-5">
+        <h3><small class="text-muted">Categories</small></h3>
+        <div class="row">
+            <div class="col-sm-4">
+                            <%= link_to 'Web Development', home_cat1_path,  class:"btn btn-lg btn-block btn-danger" %>
+            </div>
+            <div class="col-sm-4">
+                <%= link_to 'Digital Marketing', home_cat2_path,  class:"btn btn-lg btn-block btn-danger" %>
+            </div>
+            <div class="col-sm-4">
+                <%= link_to 'Data Science', home_cat3_path,  class:"btn btn-lg btn-block btn-danger" %>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h3><small class="text-muted">Achieve Your Goals</small></h3>
+        <div class="card-deck">
+            <div class="card mx-1">
+                <%= image_tag("goals.jpg", :alt => "Course Image") %>
+                <div class="card-body px-2">
+                    <h6 class="card-title">Be your own boss.</h6>
+                    <p class="card-text" style="font-size:11px">Lorem ipsum exercitation veniam incididunt nostrud est labore exercitation enim et commodo veniam laboris id reprehenderit id duis sint </p>
+                   
+                </div>
+            </div>
+<div class="card mx-1">
+                <%= image_tag("goals.jpg", :alt => "Course Image") %>
+                <div class="card-body px-2">
+                    <h6 class="card-title">Be your own boss.</h6>
+                    <p class="card-text" style="font-size:11px">Lorem ipsum exercitation veniam incididunt nostrud est labore exercitation enim et commodo veniam laboris id reprehenderit id duis sint </p>
+                   
+                </div>
+            </div>
+<div class="card mx-1">
+                <%= image_tag("goals.jpg", :alt => "Course Image") %>
+                <div class="card-body px-2">
+                    <h6 class="card-title">Be your own boss.</h6>
+                    <p class="card-text" style="font-size:11px">Lorem ipsum exercitation veniam incididunt nostrud est labore exercitation enim et commodo veniam laboris id reprehenderit id duis sint </p>
+                   
+                </div>
+            </div>
+<div class="card mx-1">
+                <%= image_tag("goals.jpg", :alt => "Course Image") %>
+                <div class="card-body px-2">
+                    <h6 class="card-title">Be your own boss.</h6>
+                    <p class="card-text" style="font-size:11px">Lorem ipsum exercitation veniam incididunt nostrud est labore exercitation enim et commodo veniam laboris id reprehenderit id duis sint </p>
+                   
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+</body>
+</html>

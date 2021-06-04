@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+        <title>Being Digital Academy</title>
+        <style>
+            /* global */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.grid-2{
+    display: grid;
+    grid-template-columns: repeat(1,2fr);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    color: #7A7C80;
+    align-items: center; 
+
+}
+h3{
+    color: darkred;
+}
+h4,.black{
+    color: darkred;
+}
+p{
+    color: black;
+}
+
+li{
+    color: black;
+}
+
+a{
+    color: #7A7C80;
+    text-decoration: none;
+}
+/* section 1 */
+.section-1{
+    padding-top: 5vh;
+    padding-left: 10vh;
+    text-align: left;
+}
+
+.section-1 p{
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    margin:0;
+}
+
+.section-1 h3{
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.section-1 a{
+    font-size: 1.5rem;
+    padding: 10px;
+}
+/* section 2 */
+.section-2{
+    padding-top: 5vh;
+    padding-left: 10vh;
+    width: 70%;
+}
+
+.section-2 h4{
+    font-size: 1.7rem;
+
+}
+
+.section-2 p{
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    margin:0;
+}
+
+.section-2 a{
+    display: block;
+    padding: 5px;
+    font-size: 1.2rem;
+    padding-left: 0;
+    width: 100px;
+}
+/* animations / utilities */
+.section-2 a:hover{
+    font-size: 1.3rem;
+    color: darkred;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.section-1 a:hover{
+    color: darkred;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.white:hover{
+    position: relative;
+    padding-left: 10px;
+}
+
+/* media queres */
+@media(max-width:780px){
+    .grid-2{
+        grid-template-columns: 1fr;
+    }
+    .section-1{
+        padding:0;
+        padding-top: 2rem;
+    }
+    .section-2{
+        padding: 0;
+        padding-left: 1.5rem;
+        padding-top: 2rem;
+    }
+}
+table {
+  border-collapse: collapse;
+  color: black;
+
+}
+td, th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+        </style>
+
+</head>
+<body class="bg-light">
+    <div class="grid-2">
+        <div class="section-1">
+            <h3> Course Name</h3>
+<%= image_tag("dm.jpg", :alt => "Course Image", :size => '700x400') %>
+<br>
+            </div>
+        <div class="section-2">
+            
+            <h4>Details</h4>
+            <table>
+  <tr>
+    <td>Course Name</td>
+    <td>Digital Marketing</td>
+  </tr>
+  <tr>
+    <td>Level</td>
+    <td>Beginner</td>
+  </tr>
+  <tr>
+    <td>Structure</td>
+    <td>Practical</td>
+  </tr>
+  <tr>
+    <td>Internship Assistance</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>Lecturer</td>
+    <td>Akshay Banda</td>
+  </tr>
+  <tr>
+    <td>Mode</td>
+    <td>Online</td>
+  </tr>
+  <tr>
+    <td>Location</td>
+    <td>Google Meets</td>
+  </tr>
+  <tr>
+    <td>Duration</td>
+    <td>1 Month</td>
+  </tr>
+  <tr>
+    <td>Days</td>
+    <td>Saturday & Sunday</td>
+  </tr>
+  <tr>
+    <td>Timing</td>
+    <td>10-11</td>
+  </tr>
+</table>
+<h4> Course Description </h4>
+<p>Lorem ipsum exercitation veniam incididunt nostrud est labore exercitation enim et commodo veniam laboris id reprehenderit id duis sint.</p>
+<h4> Course Contents </h4>
+<ol>
+    <li>1.abc</li>
+    <li>2.abc</li>
+    <li>3.abc</li>
+    <li>4.abc</li>
+    <li>5.abc</li>
+    <li>6.abc</li>
+</ol> 
+
+</div>
+</div>
+</body>
+</html>
